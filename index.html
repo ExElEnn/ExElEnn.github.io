@@ -209,70 +209,116 @@
 
 		<div class="row">
 			<div class="col-sm-4">
-				<div class="img-wrapper">
-					<img src="assets/imgs/folio-1.jpg" alt="">
-					<div class="overlay">
-						<div class="overlay-infos">
-							<h5>Project Title</h5>
-							<a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-							<a href="javascript:void(0)"><i class="ti-link"></i></a>
-						</div>  
+				<div id="popup_EasySave" class="popup" onclick="closePopup_EasySave()">
+					<div class="popup-content">
+						<span class="close-btn" onclick="event.stopPropagation(); closePopup_EasySave()">&times;</span>
+						<div class="image-container">
+							<img src="assets/imgs/xenocs_image.jpg" alt="Image de la pop-up">
+						</div>
+						<div class="popup-text">
+							<p>The Easy Save project is a project I did at school in a team of 4. It's a desktop application that manages backups. It is an application coded in C# and we used Azure Devops as a Git server to manage the versions of the project.</p>
+							<p>It's a project I'm particularly proud of, because I had never done desktop application development and we did very well.</p>
+							<p>This application could manage several dozen backups, run them at the same time, pause them, etc... There was even a feature to monitor and interact with the application with another computer on the network.</p>
+						</div>
 					</div>
 				</div>
-				<div class="img-wrapper">
-					<img src="assets/imgs/folio-2.jpg" alt="">
-					<div class="overlay">
-						<div class="overlay-infos">
-							<h5>Project Title</h5>
-							<a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-							<a href="javascript:void(0)"><i class="ti-link"></i></a>
-						</div>                              
+				<a onclick="openPopup_EasySave()">
+					<div class="img-wrapper">
+						<img src="assets/imgs/folio-1.jpg" alt="">
+						<div class="overlay">
+							<div class="overlay-infos">
+								<h5>Easy Save</h5>
+								<i class="ti-zoom-in"></i>
+							</div>  
+						</div>
 					</div>
-				</div>                  
+				</a>
+				<div id="popup_BTS" class="popup" onclick="closePopup_BTS()">
+					<div class="popup-content">
+						<span class="close-btn" onclick="event.stopPropagation(); closePopup_BTS()">&times;</span>
+						<div class="image-container">
+							<img src="assets/imgs/xenocs_image.jpg" alt="Image de la pop-up">
+						</div>
+						<div class="popup-text">
+							<p>This is my very first corporate project where I was the main actor.</p>
+							<p>Xenocs commissioned me to build a chip programming station. These chips were then integrated into the samples which were going to be analyzed by the XEUSS (one of the machines manufactured by Xenocs and used for characterization). Depending on what was written in the chip (the size of the sample, its viscosity, etc.), the machine adopted a certain behavior.</p> 
+							<p>So I made the station with the help of some colleagues that I asked, and I created a graphical interface to write more easily on the chips. The logic was in Python and the GUI was made with QT
+</p> 
+							<p>It was an extremely rewarding project, knowing that even after my BTS passed, the chip programming station was still in use a year later and I continued to improve it.</p>
+							<p>Unfortunately I don't have an image of the project to show since it belongs to the company.</p>
+						</div>
+					</div>
+				</div>
+				<a onclick="openPopup_BTS()">
+					<div class="img-wrapper">
+						<img src="assets/imgs/folio-2.jpg" alt="">
+						<div class="overlay">
+							<div class="overlay-infos">
+								<h5>End-of-BTS Project</h5>
+								<i class="ti-zoom-in"></i>
+							</div>                              
+						</div>
+					</div> 
+				</a>                 
 			</div>
 			<div class="col-sm-4">
+				<div id="popup_BigData" class="popup" onclick="closePopup_BigData()">
+					<div class="popup-content">
+						<span class="close-btn" onclick="event.stopPropagation(); closePopup_BigData()">&times;</span>
+						<div class="image-container">
+							<img src="assets/imgs/xenocs_image.jpg" alt="Image de la pop-up">
+						</div>
+						<div class="popup-text">
+							<p>Another project I did in engineering school. The goal of this project was to manipulate huge amounts of data and to imagine an architecture capable of processing them in order to be able to exploit them.
+							During this project, I discovered a whole part of computer science on which I had only prejudices.</p>
+							<p>We had as starting material, a Postgres database, Excel files of several dozen GB.
+							With the use of several tools including Talend or Apache Hive, our group succeeded in processing the information in order to be able to draw graphics that could help decision-making.</p> 
+							<p>Even if the material that the school provided us with was not enough to carry out the project, it was very interesting to do.</p>
+						</div>
+					</div>
+				</div>
+				<a onclick="openPopup_BigData()">
 				<div class="img-wrapper">
 					<img src="assets/imgs/folio-3.jpg" alt="">
 					<div class="overlay">
 						<div class="overlay-infos">
-							<h5>Project Title</h5>
-							<a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-							<a href="javascript:void(0)"><i class="ti-link"></i></a>
+							<h5>Big Data</h5>
+							<i class="ti-zoom-in"></i>
 						</div>  
 					</div>
 				</div>
 				<div id="popup_website_butcher" class="popup" onclick="closePopup_website_butcher()">
-								<div class="popup-content">
-									<span class="close-btn" onclick="event.stopPropagation(); closePopup_website_butcher()">&times;</span>
-									<div class="image-container">
-										<img src="assets/imgs/xenocs_image.jpg" alt="Image de la pop-up">
-									</div>
-									<div class="popup-text">
-										<p>I worked at Xenocs from 2019 to 2021 for my BTS SNIR and from 2021 to 2022 for my Bachelor Devops. I consider myself very lucky to have been able to start my professional career in such a company. The colleagues were really nice, and the atmosphere was very relaxed but professional.</p>
-										<p>During my BTS I was in charge of computer stock and I also took care of user support on site. I was also the link between the external service providers and the company at the IT level. I also had the chance to have a very stimulating end-of-BTS project.</p>
-										<p>For my year of Bachelor Devops, I had the opportunity to work on an internal website, which listed all the machines sold by the company. I also worked on adding new machines directly through the site. Even if I was not able to validate my Bachelor year, it was an extremely rewarding year.</p>
-									</div>
-								</div>
-							</div>
-				<div class="img-wrapper">
-					<img src="assets/imgs/folio-4.jpg" alt="">
-					<div class="overlay">
-						<div class="overlay-infos">
-							<h5>My father's butcher's website</h5>
-							<a onclick="openPopup_website_butcher()"><i class="ti-zoom-in"></i></a>
-							<a href="https://www.boucheriechezfred.fr/actualité" target="_blank"><i class="ti-link"></i></a>
-						</div>                              
+					<div class="popup-content">
+						<span class="close-btn" onclick="event.stopPropagation(); closePopup_website_butcher()">&times;</span>
+						<div class="image-container">
+							<img src="assets/imgs/site_boucherie.png" alt="Image de la pop-up">
+						</div>
+						<div class="popup-text">
+							<p>At the request of my father, who is a craftsman butcher, I built a website so that he would have more visibility on the internet.</p>
+							<p>I started this project at the beginning of my higher education in 2019. Initially, I coded the whole site by hand in HTML, CSS and JavaScript.  At the end of my Bachelor Devops in 2022, I updated the site with the new technologies that I had used in class and in business. I used Angular that I learned in business, I reduced the size of the photos, I did what was necessary for the site to be better referenced by Google, etc...</p>
+							<p>The site is still online and is available <a href="https://www.boucheriechezfred.fr/actualité" target="_blank">here.</a></p>
+						</div>
 					</div>
-				</div>                  
+				</div>
+				<a onclick="openPopup_website_butcher()">
+					<div class="img-wrapper">
+						<img src="assets/imgs/site_boucherie.png" alt="">
+						<div class="overlay">
+							<div class="overlay-infos">
+								<h5>My Father's Butcher's Website</h5>
+								<i class="ti-zoom-in"></i>
+							</div>                              
+						</div>
+					</div> 
+				</a>
 			</div>
 			<div class="col-sm-4">
 				<div class="img-wrapper">
 					<img src="assets/imgs/folio-5.jpg" alt="">
 					<div class="overlay">
 						<div class="overlay-infos">
-							<h5>Project Title</h5>
-							<a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-							<a href="javascript:void(0)"><i class="ti-link"></i></a>
+							<h5>Full Stack Development Web</h5>
+							<i class="ti-zoom-in"></i>
 						</div>  
 					</div>
 				</div>
@@ -280,9 +326,8 @@
 					<img src="assets/imgs/folio-6.jpg" alt="">
 					<div class="overlay">
 						<div class="overlay-infos">
-							<h5>Project Title</h5>
-							<a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-							<a href="javascript:void(0)"><i class="ti-link"></i></a>
+							<h5>Network Infrastructure</h5>
+							<i class="ti-zoom-in"></i>
 						</div>                              
 					</div>
 				</div>                  
@@ -519,6 +564,27 @@
 	}
 	function closePopup_Nomios() {
 		document.getElementById("popup_Nomios").style.display = "none";
+	}
+
+	function openPopup_EasySave() {
+		document.getElementById("popup_EasySave").style.display = "block";
+	}
+	function closePopup_EasySave() {
+		document.getElementById("popup_EasySave").style.display = "none";
+	}
+
+	function openPopup_BTS() {
+		document.getElementById("popup_BTS").style.display = "block";
+	}
+	function closePopup_BTS() {
+		document.getElementById("popup_BTS").style.display = "none";
+	}
+
+	function openPopup_BigData() {
+		document.getElementById("popup_BigData").style.display = "block";
+	}
+	function closePopup_BigData() {
+		document.getElementById("popup_BigData").style.display = "none";
 	}
 
 	function openPopup_website_butcher() {
